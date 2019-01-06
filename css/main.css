@@ -1,0 +1,90 @@
+/* CSS reset */
+html {
+  height: 100%;
+}
+body,
+h1,
+h2,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* General page styling*/
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  height: 100%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(../images/main-bg.jpg);
+  background-size: cover;
+}
+.main header {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.main header h1,
+.main header h2,
+.main header h3 {
+  text-transform: capitalize;
+}
+.main header h1 {
+  font-size: 5rem;
+}
+.main header h2 {
+  font-size: 2rem;
+}
+.main header h3 {
+  font-size: 1.5rem;
+}
+
+.nav-social-media {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+}
+.nav-social-media li {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+.nav-social-media li a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+.nav-social-media li a:hover {
+  border-color: #fff;
+  background: rgba(255,255,255,0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .main header h1 {
+    font-size: 3rem;
+  }
+}
