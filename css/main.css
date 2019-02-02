@@ -10,6 +10,10 @@ ul {
   margin: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
 }
@@ -29,14 +33,17 @@ body {
   height: 100%;
 }
 
-.main {
+main {
   position: relative;
   height: 100%;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url(../images/main-bg.jpg);
+  background-color: #000;
+  background: url(../images/main-bg.jpg) 50% no-repeat, linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) );
+  /* background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%; */
   background-size: cover;
-  background-position: center;
 }
-.main header {
+main header {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -45,18 +52,18 @@ body {
   color: #fff;
   text-align: center;
 }
-.main header h1,
-.main header h2,
-.main header h3 {
+main header h1,
+main header h2,
+main header h3 {
   text-transform: capitalize;
 }
-.main header h1 {
+main header h1 {
   font-size: 5rem;
 }
-.main header h2 {
+main header h2 {
   font-size: 2rem;
 }
-.main header h3 {
+main header h3 {
   font-size: 1.5rem;
 }
 
@@ -93,8 +100,8 @@ body {
   max-height: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  .main header h1 {
+@media only screen and (max-width: 600px) {
+  main header h1 {
     font-size: 3rem;
   }
 
